@@ -5,7 +5,7 @@ This project aims to predict the performance of a solar heating system using an 
 ## Overview
 
 The system is designed to operate as a solar heating solution, where solar radiation passes through a double-glazed window, is absorbed by an aluminum plate, and transfers heat to the cold air, which then rises through a duct and returns to the house at a higher temperature. Our goal is to model and predict the system's behavior to optimize its efficiency under different conditions.
-![Solar Heating System Design](image/solar_heating_system.png)
+![Solar Heating System Design](images/solar_heating_system.png)
 
 ### Key Steps:
 1. **Simulation and Data Generation:**
