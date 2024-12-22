@@ -19,7 +19,10 @@ The system is designed to operate as a solar heating solution, where solar radia
 ### Files:
 1. **`direct_pinn.py`**: Contains the PINN for predicting the temperature and air speed under various conditions.
 2. **`inverse_pinn.py`**: Solves the inverse problem by estimating the system's unknown coefficients (h1, h2) based on real-world measurements.
-3. **`report.pdf`**: The original presentation and report for the solar heating project.
+3. **`project_presentation.pdf`**: The original presentation and report for the solar heating project.
+4. **`comsol_simulation_temperature.txt`**: Results of the COMSOL simulation for temperature at various points in the system.
+5. **`comsol_simulation_speed.txt`**: Results of the COMSOL simulation for air speed at various points in the system.
+6. **`real_system_mesures`**: Real-world measurement data from the solar heating system used to train the model.
 
 ## Model Description
 
