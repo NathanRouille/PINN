@@ -5,6 +5,7 @@ This project aims to predict the performance of a solar heating system using an 
 ## Overview
 
 The system is designed to operate as a solar heating solution, where solar radiation passes through a double-glazed window, is absorbed by an aluminum plate, and transfers heat to the cold air, which then rises through a duct and returns to the house at a higher temperature. Our goal is to model and predict the system's behavior to optimize its efficiency under different conditions.
+![Solar Heating System Design](image/solar_heating_system.png)
 
 ### Key Steps:
 1. **Simulation and Data Generation:**
@@ -30,10 +31,13 @@ The system is designed to operate as a solar heating solution, where solar radia
    - **Inputs**: Coordinates of a point in the system, solar power, and external temperature.
    - **Outputs**: Predicted temperature and air speed at that point.
    - **Training**: The network is trained using a combination of real-world data and PDEs based on physical laws like mass conservation, Navier-Stokes equations, and energy conservation.
+![Direct PINN Architecture](images/direct_pinn_architecture.png)
+
 
 ### 2. **Inverse Problem (PINN)**:
    - **Objective**: To estimate unknown parameters (h1 and h2) by minimizing the error between the simplified analytical model and the real-world data.
    - **Training**: The PINN learns these coefficients with far fewer training points (around 10 measurements).
+![Inverse PINN Architecture](images/inverse_pinn_architecture.png)
 
 ## Experimental Setup
 
@@ -43,8 +47,11 @@ The system is designed to operate as a solar heating solution, where solar radia
 
 ## Results
 
-- **Direct Model**: Using 200 measurements, the model predicted the temperature and speed with a good error margin.
+- **Direct Model**: Using 200 measurements, the model predicted the temperature and speed with a good error margin but it's not accurate with 30 measurements.
+- ![Temperature Prediction Comparison](images/temperature_30vs200.png)
+  ![Velocity Prediction Comparison](images/velocity_30vs200.png)
 - **Inverse Model**: The inverse problem approach significantly reduced the number of training data points to around 10, while achieving a good fit with real-world data.
+  ![Temperature Prediction vs Reality](images/temperature_prediction_vs_reality.png)
 
 ### Performance:
 - **Accuracy**: The PINN achieved a mean error of 0.4 K for temperature predictions, compared to 2.6 K for COMSOL.
