@@ -1,4 +1,4 @@
-# Solar Heating System with Air Thermics - Physical Informed Neural Networks (PINN)
+# Solar Heating System with Air Thermics - Physical Informed Neural Networks (PINN) 
 
 This project aims to predict the performance of a solar heating system using an air thermic principle. We built a model to predict the temperature and air speed at different points of the system under various sunlight and external temperature conditions. This model was implemented using a Physics-Informed Neural Network (PINN).
 
